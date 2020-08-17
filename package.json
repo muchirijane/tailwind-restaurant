@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-restaurant",
+  "version": "1.0.0",
+  "description": "A responsive website build with tailwind css.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muchirijane/tailwind-restaurant.git"
+  },
+  "keywords": [],
+  "author": "Jane Muthoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muchirijane/tailwind-restaurant/issues"
+  },
+  "homepage": "https://github.com/muchirijane/tailwind-restaurant#readme",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
+}
