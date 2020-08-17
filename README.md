@@ -71,3 +71,10 @@ module.exports = {
 ```js
 npm run build-css
 ```
+#### How to create a custom class selector
+In the style.css file where you imported your tailwind css components, add a  collection of the classes, into one  and use @apply to initiate them. @apply acts like a mixin for tailwind css.
+```js
+.card{
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+```

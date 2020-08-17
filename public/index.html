@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Food restaurant</title>
 </head>
-<body class = "text-gray-600">
+<body class = "text-gray-600 font-body">
     <div> <!-- content wrapper -->
         <div> <!-- start of nav-->
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100 text-mainFont">
-                        <a href="/"> Food restaurant</a>
+                        <a href="/" class="text-sm md:text-lg"> Food restaurant</a>
                     </h1>
                 </div>
                 <ul>
@@ -35,10 +35,10 @@
             </nav>
         </div> <!-- end of nav-->
 
-        <main class="px-16 py-6"> 
-            <div>
-                <a href="#" class="text-primary border-2 border-primary py-2 px-4 mr-4 rounded-full"> Log in</a>
-                <a href="#" class="text-primary border-2 border-primary py-2 px-4 rounded-full"> Sign up</a>
+        <main class="px-16 py-6 bg-gray-100"> 
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="text-primary md:border-2 md:border-primary py-2 px-5 mr-4 md:rounded-full"> Log in</a>
+                <a href="#" class="text-primary md:border-2 md:border-primary py-2 px-6 md:rounded-full"> Sign up</a>
             </div>
 
             <header>
@@ -50,13 +50,40 @@
 
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
-                <div class="mt-8"> <!-- lastest  Card section-->
+                <div class="mt-8 grid grid-cols-1 xl:grid-cols-3 gap-6"> <!-- lastest  Card section-->
 
-                    <div> <!-- start of card-->
-                        <img src="img/stew.jpg" alt="Stew image">
-                        <div>
-                            <span> 5 Bean Chilli Stew</span>
-                            <span> Recipe by Mario</span>
+                    <div class="card"> <!-- start of card-->
+                        <img src="img/stew.jpg" alt="Stew image" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold"> 5 Bean Chilli Stew</span>
+                            <span class="block text-sm text-gray-500"> Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25mins</span>
+                        </div>
+
+                    </div> <!-- end of card -->
+
+                    <div class="card"> <!-- start of card-->
+                        <img src="img/noodles.jpg" alt="Stew image" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold"> Veg Noodles</span>
+                            <span class="block text-sm text-gray-500"> Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25mins</span>
+                        </div>
+
+                    </div> <!-- end of card -->
+
+                    <div class="card"> <!-- start of card-->
+                        <img src="img/curry.jpg" alt="Stew image" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-sm text-gray-500"> Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span>25mins</span>
                         </div>
 
                     </div> <!-- end of card -->
@@ -70,8 +97,8 @@
                   
                 </div> <!-- most popular Card section end -->
 
-                <div>
-                    <div class="bg-secondary-100 text-secondary-200"> load more</div>
+                <div class="flex justify-center">
+                    <button class="bg-secondary-100 text-secondary-200 py-2 px-6 rounded-full"> load more</button>
                 </div>
 
             </div> <!-- end of cards -->
