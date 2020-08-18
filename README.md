@@ -77,4 +77,5 @@ In the style.css file where you imported your tailwind css components, add a  co
 .card{
     @apply bg-white rounded overflow-hidden shadow-md relative;
 }
-```
+
+Notes from Net ninja tailwind crash course
